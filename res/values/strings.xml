@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EdmondAppsSample</string>
+    <string name="cd_img_president">President\'s Protrait</string>
+    <string name="party">Party</string>
+    <string name="birthyear">Birthyear</string>
+    <string name="president">President</string>
+
+</resources>

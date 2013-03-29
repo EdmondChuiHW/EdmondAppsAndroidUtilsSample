@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ed__padding_small"
+            android:background="#DDDDDD"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/ed__padding_small"
+            android:paddingLeft="@dimen/ed__padding_small"
+            android:paddingRight="@dimen/ed__padding_small"
+            android:paddingTop="@dimen/ed__padding_small" >
+
+            <TextView
+                android:id="@+id/lbl_president"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ed__padding_small"
+                android:gravity="center"
+                android:textSize="@dimen/ed__textsize_large" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/img_president"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    tools:ignore="ContentDescription" />
+
+                <ProgressBar
+                    android:id="@android:id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateOnly="true" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/party" />
+
+        <TextView
+            android:id="@+id/view_party"
+            style="@style/styleListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birthyear" />
+
+        <TextView
+            android:id="@+id/view_birthday"
+            style="@style/styleListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,303 @@
+[
+    {
+        "president_name":"George Washington",
+        "president_party":{
+            "party_name":"Independent"
+        },
+        "president_birthyear":1732
+    },
+    {
+        "president_name":"John Adams",
+        "president_party":{
+            "party_name":"Federalist"
+        },
+        "president_birthyear":1735
+    },
+    {
+        "president_name":"Thomas Jefferson",
+        "president_party":{
+            "party_name":"Democratic-Republican"
+        },
+        "president_birthyear":1743
+    },
+    {
+        "president_name":"James Madisonn",
+        "president_party":{
+            "party_name":"Democratic-Republican"
+        },
+        "president_birthyear":1751
+    },
+    {
+        "president_name":"James Monroe",
+        "president_party":{
+            "party_name":"Democratic-Republican"
+        },
+        "president_birthyear":1758
+    },
+    {
+        "president_name":"John Quincy Adams",
+        "president_party":{
+            "party_name":"Democratic-Republican"
+        },
+        "president_birthyear":1767
+    },
+    {
+        "president_name":"Andrew Jackson",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1767
+    },
+    {
+        "president_name":"Martin Van Buren",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1782
+    },
+    {
+        "president_name":"William Henry Harrison",
+        "president_party":{
+            "party_name":"Whig"
+        },
+        "president_birthyear":1773
+    },
+    {
+        "president_name":"John Tyler",
+        "president_party":{
+            "party_name":"Whig"
+        },
+        "president_birthyear":1790
+    },
+    {
+        "president_name":"James K. Polk",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1795
+    },
+    {
+        "president_name":"Zachary Taylor",
+        "president_party":{
+            "party_name":"Whig"
+        },
+        "president_birthyear":1784
+    },
+    {
+        "president_name":"Millard Fillmore",
+        "president_party":{
+            "party_name":"Whig"
+        },
+        "president_birthyear":1800
+    },
+    {
+        "president_name":"Franklin Pierce",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1804
+    },
+    {
+        "president_name":"James Buchanan",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1791
+    },
+    {
+        "president_name":"Abraham Lincoln",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1809
+    },
+    {
+        "president_name":"Andrew Johnson",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1808
+    },
+    {
+        "president_name":"Ulysses S. Grant",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1822
+    },
+    {
+        "president_name":"Rutherford B. Hayes",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1822
+    },
+    {
+        "president_name":"James A. Garfield",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1831
+    },
+    {
+        "president_name":"Chester A. Arthur",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1829
+    },
+    {
+        "president_name":"Grover Cleveland",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1837
+    },
+    {
+        "president_name":"Benjamin Harrison",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1833
+    },
+    {
+        "president_name":"William McKinley",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1843
+    },
+    {
+        "president_name":"Theodore Roosevelt",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1858
+    },
+    {
+        "president_name":"William Howard Taft",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1857
+    },
+    {
+        "president_name":"Woodrow Wilson",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1856
+    },
+    {
+        "president_name":"Warren G. Harding",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1865
+    },
+    {
+        "president_name":"Calvin Coolidge",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1872
+    },
+    {
+        "president_name":"Herbert Hoover",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1874
+    },
+    {
+        "president_name":"Franklin D. Roosevelt",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1882
+    },
+    {
+        "president_name":"Harry S. Truman",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1884
+    },
+    {
+        "president_name":"Dwight D. Eisenhower",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1890
+    },
+    {
+        "president_name":"John F. Kennedy",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1917
+    },
+    {
+        "president_name":"Lyndon B. Johnson",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1908
+    },
+    {
+        "president_name":"Richard Nixon",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1913
+    },
+    {
+        "president_name":"Gerald Ford",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1913
+    },
+    {
+        "president_name":"Jimmy Carter",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1924
+    },
+    {
+        "president_name":"Ronald Reagan",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1911
+    },
+    {
+        "president_name":"George H. W. Bush",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1924
+    },
+    {
+        "president_name":"Bill Clinton",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1946
+    },
+    {
+        "president_name":"George W. Bush",
+        "president_party":{
+            "party_name":"Republican"
+        },
+        "president_birthyear":1946
+    },
+    {
+        "president_name":"Barack Obama",
+        "president_party":{
+            "party_name":"Democratic"
+        },
+        "president_birthyear":1961
+    }
+]
