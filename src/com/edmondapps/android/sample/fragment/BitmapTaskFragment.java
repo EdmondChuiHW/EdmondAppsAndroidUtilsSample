@@ -55,10 +55,12 @@ public class BitmapTaskFragment extends AbstractAsyncFragment<String, Void, Bitm
 	}
 
 	public void finish() {
-		getFragmentManager()
-				.beginTransaction()
-				.remove(this)
-				.commit();
+		if (!isAdded()) {
+			getFragmentManager()
+					.beginTransaction()
+					.remove(this)
+					.commit();
+		}
 	}
 
 	@Override
