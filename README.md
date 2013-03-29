@@ -2,9 +2,10 @@ EdmondAppsAndroidUtilsSample
 ============================
 
 Sample app to demonstrate [EdmondAppsAndroidUtils] [1] with logging, Activities, Fragments, SQLite databases, asynchronous operations, JSON, animations and more..  
-Why is this app about US presidents? I searched "list of" on Google and it returned [this Wiki page] [2].  
   
-Link to Play Store.
+Why is this app about US presidents? Because I searched "list of" on Google and it returned [this Wiki page] [2].  
+  
+[Link to Play Store] [3].
 
 Developed By
 ======================
@@ -31,3 +32,4 @@ limitations under the License.
 
 [1]: https://github.com/chuihinwai/EdmondAppsAndroidUtils
 [2]: http://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States
+[3]: https://play.google.com/store/apps/details?id=com.edmondapps.android.sample
