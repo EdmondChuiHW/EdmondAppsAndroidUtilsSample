@@ -27,35 +27,35 @@ import com.edmondapps.utils.android.Utils;
 import com.edmondapps.utils.android.activity.DualPaneActivity;
 
 public class MainTabletActivity extends DualPaneActivity implements
-		PresidentsFragment.Callback,
-		PresidentFragment.Callback,
-		BitmapTaskFragment.Callback {
+        PresidentsFragment.Callback,
+        PresidentFragment.Callback,
+        BitmapTaskFragment.Callback {
 
-	@Override
-	protected Fragment onCreateFragment() {
-		return new PresidentsFragment();
-	}
+    @Override
+    protected Fragment onCreateFragment() {
+        return new PresidentsFragment();
+    }
 
-	@Override
-	protected Fragment onCreateDetailFragment() {
-		return new PresidentFragment();
-	}
+    @Override
+    protected Fragment onCreateDetailFragment() {
+        return new PresidentFragment();
+    }
 
-	@Override
-	public void onPresidentSelected(PresidentsFragment f, IPresident p, ListView v, int position) {
-		if (Utils.hasHoneyComb()) {
-			v.setItemChecked(position, true);
-		}
-		((PresidentFragment)getDetailFragment()).setPresident(p);
-	}
+    @Override
+    public void onPresidentSelected(PresidentsFragment f, IPresident p, ListView v, int position) {
+        if (Utils.hasHoneyComb()) {
+            v.setItemChecked(position, true);
+        }
+        ((PresidentFragment)getDetailFragment()).setPresident(p);
+    }
 
-	@Override
-	public void onBitmapLoaded(BitmapTaskFragment f, Bitmap bitmap) {
-		if (bitmap != null) {
-			((PresidentFragment)getDetailFragment()).onBitmapLoaded(bitmap);
-		} else {
-			((PresidentFragment)getDetailFragment()).onBitmapLoadFailed();
-		}
-		f.finish();
-	}
+    @Override
+    public void onBitmapLoaded(BitmapTaskFragment f, Bitmap bitmap) {
+        if (bitmap != null) {
+            ((PresidentFragment)getDetailFragment()).onBitmapLoaded(bitmap);
+        } else {
+            ((PresidentFragment)getDetailFragment()).onBitmapLoadFailed();
+        }
+        f.finish();
+    }
 }

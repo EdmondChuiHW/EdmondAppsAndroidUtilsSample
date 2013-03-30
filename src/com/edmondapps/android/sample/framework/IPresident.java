@@ -19,11 +19,11 @@ import com.edmondapps.utils.android.json.Jsonable;
 import com.edmondapps.utils.java.Identifiable;
 
 public interface IPresident extends Identifiable, Jsonable {
-	public static final String TAG = "IPresident";
+    public static final String TAG = "IPresident";
 
-	String getName();
+    String getName();
 
-	IParty getParty();
+    IParty getParty();
 
-	int getBirthyear();
+    int getBirthyear();
 }

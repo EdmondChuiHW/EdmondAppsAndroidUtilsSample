@@ -18,11 +18,11 @@ package com.edmondapps.android.sample.framework;
 import java.util.Date;
 
 public interface ITerm {
-	IPresident getPresident();
+    IPresident getPresident();
 
-	Date getTookOfficeTime();
+    Date getTookOfficeTime();
 
-	Date getLeftOfficeTime();
+    Date getLeftOfficeTime();
 
-	IPresident getVicePresident();
+    IPresident getVicePresident();
 }

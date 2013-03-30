@@ -29,28 +29,28 @@ import com.edmondapps.utils.android.annotaion.ParentActivity;
 
 @ParentActivity(PresidentsActivity.class)
 public class PresidentActivity extends SinglePaneActivity implements
-		PresidentFragment.Callback,
-		BitmapTaskFragment.Callback {
+        PresidentFragment.Callback,
+        BitmapTaskFragment.Callback {
 
-	public static void startWithPresident(Context context, President president) {
-		Intent intent = new Intent(context, PresidentActivity.class);
-		intent.putExtra(IPresident.TAG, president);
-		context.startActivity(intent);
-	}
+    public static void startWithPresident(Context context, President president) {
+        Intent intent = new Intent(context, PresidentActivity.class);
+        intent.putExtra(IPresident.TAG, president);
+        context.startActivity(intent);
+    }
 
-	@Override
-	protected Fragment onCreateFragment() {
-		return PresidentFragment.newInstance(
-				getIntent().<President> getParcelableExtra(IPresident.TAG));
-	}
+    @Override
+    protected Fragment onCreateFragment() {
+        return PresidentFragment.newInstance(
+                getIntent().<President> getParcelableExtra(IPresident.TAG));
+    }
 
-	@Override
-	public void onBitmapLoaded(BitmapTaskFragment f, Bitmap bitmap) {
-		if (bitmap != null) {
-			((PresidentFragment)getFragment()).onBitmapLoaded(bitmap);
-		} else {
-			((PresidentFragment)getFragment()).onBitmapLoadFailed();
-		}
-		f.finish();
-	}
+    @Override
+    public void onBitmapLoaded(BitmapTaskFragment f, Bitmap bitmap) {
+        if (bitmap != null) {
+            ((PresidentFragment)getFragment()).onBitmapLoaded(bitmap);
+        } else {
+            ((PresidentFragment)getFragment()).onBitmapLoadFailed();
+        }
+        f.finish();
+    }
 }

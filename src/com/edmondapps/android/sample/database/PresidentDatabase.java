@@ -22,8 +22,8 @@ import com.edmondapps.android.sample.model.Presidents;
 import com.edmondapps.utils.android.database.Database;
 
 public class PresidentDatabase extends Database<President> {
-	public PresidentDatabase(Context context) {
-		super(context, Presidents.DATABASE_TABLE);
-	}
+    public PresidentDatabase(Context context) {
+        super(context, Presidents.DATABASE_TABLE);
+    }
 
 }

@@ -29,150 +29,150 @@ import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonReader;
 
 public class Party implements IParty, Parcelable {
-	public static final Creator<Party> CREATOR = new Creator<Party>() {
-		@Override
-		public Party createFromParcel(Parcel source) {
-			return new Party(source);
-		}
+    public static final Creator<Party> CREATOR = new Creator<Party>() {
+        @Override
+        public Party createFromParcel(Parcel source) {
+            return new Party(source);
+        }
 
-		@Override
-		public Party[] newArray(int size) {
-			return new Party[size];
-		}
-	};
+        @Override
+        public Party[] newArray(int size) {
+            return new Party[size];
+        }
+    };
 
-	public static final class Builder {
-		private String mName;
+    public static final class Builder {
+        private String mName;
 
-		public Builder setName(String name) {
-			mName = name;
-			return this;
-		}
+        public Builder setName(String name) {
+            mName = name;
+            return this;
+        }
 
-		public Party build() {
-			return new Party(this);
-		}
+        public Party build() {
+            return new Party(this);
+        }
 
-		public static final JsonBuilder<Party> JSON_BUILDER = new JsonBuilder<Party>() {
-			@Override
-			public Party build(long id, JsonReader reader) throws IOException {
-				return fromJson(reader);
-			}
-		};
+        public static final JsonBuilder<Party> JSON_BUILDER = new JsonBuilder<Party>() {
+            @Override
+            public Party build(long id, JsonReader reader) throws IOException {
+                return fromJson(reader);
+            }
+        };
 
-		public static final Party fromJson(JsonReader r) throws IOException {
-			Builder b = new Builder();
+        public static final Party fromJson(JsonReader r) throws IOException {
+            Builder b = new Builder();
 
-			r.beginObject();
-			while (r.hasNext()) {
-				String name = r.nextName();
-				if (PartyCol.NAME.equals(name)) {
-					b.setName(r.nextString());
-				} else {
-					r.skipValue();
-				}
-			}
-			r.endObject();
+            r.beginObject();
+            while (r.hasNext()) {
+                String name = r.nextName();
+                if (PartyCol.NAME.equals(name)) {
+                    b.setName(r.nextString());
+                } else {
+                    r.skipValue();
+                }
+            }
+            r.endObject();
 
-			return b.build();
-		}
+            return b.build();
+        }
 
-		public static final Party fromCursor(Cursor c) {
-			Builder b = new Builder();
-			b.setName(c.getString(c.getColumnIndex(PartyCol.NAME)));
-			return b.build();
-		}
-	}
+        public static final Party fromCursor(Cursor c) {
+            Builder b = new Builder();
+            b.setName(c.getString(c.getColumnIndex(PartyCol.NAME)));
+            return b.build();
+        }
+    }
 
-	public static Party valueOf(IParty party) {
-		if (party instanceof Party) {
-			return (Party)party;
-		} else {
-			return new Party(party);
-		}
-	}
+    public static Party valueOf(IParty party) {
+        if (party instanceof Party) {
+            return (Party)party;
+        } else {
+            return new Party(party);
+        }
+    }
 
-	private final String mName;
+    private final String mName;
 
-	private Party(Builder b) {
-		mName = b.mName;
-	}
+    private Party(Builder b) {
+        mName = b.mName;
+    }
 
-	private Party(Parcel source) {
-		mName = source.readString();
-	}
+    private Party(Parcel source) {
+        mName = source.readString();
+    }
 
-	public Party(String name) {
-		mName = name;
-	}
+    public Party(String name) {
+        mName = name;
+    }
 
-	public Party(IParty party) {
-		mName = party.getName();
-	}
+    public Party(IParty party) {
+        mName = party.getName();
+    }
 
-	@Override
-	public String getName() {
-		return mName;
-	}
+    @Override
+    public String getName() {
+        return mName;
+    }
 
-	@Override
-	public String toString() {
-		return new StringBuilder()
-				.append("Party [mName=").append(mName)
-				.append("]")
-				.toString();
-	}
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append("Party [mName=").append(mName)
+                .append("]")
+                .toString();
+    }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = (prime * result) + ( (mName == null) ? 0 : mName.hashCode());
-		return result;
-	}
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = (prime * result) + ( (mName == null) ? 0 : mName.hashCode());
+        return result;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null) {
-			return false;
-		}
-		if (! (obj instanceof Party)) {
-			return false;
-		}
-		Party other = (Party)obj;
-		if (mName == null) {
-			if (other.mName != null) {
-				return false;
-			}
-		} else if (!mName.equals(other.mName)) {
-			return false;
-		}
-		return true;
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (! (obj instanceof Party)) {
+            return false;
+        }
+        Party other = (Party)obj;
+        if (mName == null) {
+            if (other.mName != null) {
+                return false;
+            }
+        } else if (!mName.equals(other.mName)) {
+            return false;
+        }
+        return true;
+    }
 
-	@Override
-	public int describeContents() {
-		return 0;
-	}
+    @Override
+    public int describeContents() {
+        return 0;
+    }
 
-	@Override
-	public void writeToParcel(Parcel p, int flags) {
-		p.writeString(mName);
-	}
+    @Override
+    public void writeToParcel(Parcel p, int flags) {
+        p.writeString(mName);
+    }
 
-	@Override
-	public JsonObject toJson() {
-		JsonObject object = new JsonObject();
-		object.addProperty(PartyCol.NAME, mName);
-		return object;
-	}
+    @Override
+    public JsonObject toJson() {
+        JsonObject object = new JsonObject();
+        object.addProperty(PartyCol.NAME, mName);
+        return object;
+    }
 
-	public ContentValues toContentValues() {
-		ContentValues values = new ContentValues();
-		values.put(PartyCol.NAME, mName);
-		return values;
-	}
+    public ContentValues toContentValues() {
+        ContentValues values = new ContentValues();
+        values.put(PartyCol.NAME, mName);
+        return values;
+    }
 }
